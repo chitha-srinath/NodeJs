@@ -1,0 +1,55 @@
+header {
+  height: 8vh;
+  background-color: khaki;
+}
+h1 {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+form {
+  margin-top: 1rem;
+  margin-left: 20vw;
+}
+button {
+  height: 40px;
+  width: 80px;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  margin-left: 0.5rem;
+}
+input {
+  width: 30vw;
+  height: 3vh;
+  background-color: cyan;
+  color: black;
+}
+p {
+  background-color: mediumseagreen;
+  color: black;
+
+  width: 31vw;
+  height: 1.5rem;
+  text-align: center;
+}
+/* .complete,
+.delete {
+  height: 40px;
+  width: 80px;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  margin-left: 0.5rem;
+} */
+a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  margin-left: 0.5rem;
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+.complete {
+  color: white;
+}

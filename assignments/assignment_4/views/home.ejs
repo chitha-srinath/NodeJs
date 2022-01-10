@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ToDo App</h1>
+    </header>
+    <form action="/todo/app" method="POST">
+
+        <input type="text" name="name" value="">
+        <button type="submit">Submit</button>
+        <% data.map((todo)=>{%>
+
+            <% if(todo.taskstatus){%>
+                <p class="complete">
+                    <strong>
+                        <%= todo.todoname %>
+                    </strong>
+                </p>
+                <%}else{%>
+                    <p>
+                        <strong>
+                            <%= todo.todoname %>
+                        </strong>
+                    </p>
+                    <a href="/todo/<%= todo._id%>/complete">Mark complete</a>
+                    <%}%>
+
+                        <a href="/todo/<%= todo._id%>/delete">Delete</a>
+                        <% }) %>
+    </form>
+</body>
+
+</html>
